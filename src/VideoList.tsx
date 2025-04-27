@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import ReactPlayer from "react-player";
 import { CheckCircle, Lock, File } from "lucide-react";
 import { useVideoProgress } from "./hooks/useVideoProgress";
@@ -87,10 +87,7 @@ const VideoCoursePlayer = () => {
             <span className="font-medium text-gray-700">You</span>
             <span className="font-medium">{courseProgress}%</span>
           </div>
-          <Progress
-            value={courseProgress}
-            className="h-2 w-full bg-gray-300"
-          />
+          <Progress value={courseProgress} className="h-2 w-full bg-gray-300" />
         </div>
 
         {/* Week Info */}
